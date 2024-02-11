@@ -1,0 +1,58 @@
+/* javajam.css */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* 'Roboto' google font */
+    color: #333;
+    background-color: #f0efeb;
+}
+
+
+header, nav, main, aside, footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4b3832; /* Darker shade for the header */
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3c2f2f; /* Dark background for nav */
+}
+
+nav ul li {
+    display: inline; /* Display nav items inline */
+    margin-right: 20px; /* Spacing between nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #be9b7b; /* Lighter text for better contrast against dark nav */
+}
+
+main {
+    background-color: #fff; /* White background for main content */
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow around main content */
+}
+
+main ul {
+    list-style: none;
+    padding-left: 40px; 
+}
+
+main li {
+    margin-bottom: 5px; /* Spacing between list items */
+}
+
+footer {
+    font-size: small;
+    margin-top: 20px;
+    background-color: #4b3832;
+    color: #fff;
+}
