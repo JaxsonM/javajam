@@ -1,117 +1,170 @@
-/* javajam.css */
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
+/* Body styling for background and text */
 body {
-    font-family: 'Roboto', Arial, sans-serif; /* 'Roboto' google font */
-    color: #333;
-    background-color: #f0efeb;
-    background-image: url('images/fadedroad50.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #FCEBB6; /* Soft background color */
+    background-image: url(images/fadedroad50.jpg); /* Road image as the background */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure background covers entire screen */
+    background-attachment: fixed; /* Background image does not scroll */
+    color: #221811; /* Default text color */
+    font-family: Tahoma, Arial, sans-serif; /* Default font family */
 }
 
+/* Wrapper for centering content and adding shadow */
 #wrapper {
-    min-width: 900px;
-    max-width: 1280px;
-    margin: 0 auto;
-    box-shadow: 3px 3px 3px #666;
+    background-color: #231814; /* Dark background for contrast */
+    margin-left: auto;
+    margin-right: auto; /* Center the wrapper */
+    width: 80%; /* Occupies 80% of viewport width */
+    min-width: 900px; /* Minimum width */
+    max-width: 1280px; /* Maximum width */
+    box-shadow: 3px 3px 3px #676767; /* Subtle shadow for depth */
+    padding: 0; /* No padding to allow full-width header and footer */
 }
 
-header, nav, main, aside, footer {
-    text-align: center;
-}
-
+/* Header styling */
 header {
-    background-color: #4b3832; /* Darker shade for the header */
-    color: #fff;
+    background-color: #D2B48C; /* Header background color */
+    background-image: url(images/coffeelogo.jpg); /* Logo image */
+    background-repeat: no-repeat; /* No repeat for logo */
+    color: #231814; /* Text color for better visibility */
+    padding-left: 240px; /* Make space for the logo */
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-nav {
-    background-color: #be9b7b; /* Solid background color for better visibility */
-    padding: 10px 0;
+/* Hyperlink styling within the header */
+header a {
+    text-decoration: none; /* Remove underline from links */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+header a:link, header a:visited {
+    color: #231814; /* Consistent color for links */
 }
 
-nav ul li {
-    display: inline; /* Display nav items inline */
-    margin-right: 20px; /* Spacing between nav items */
+header a:hover {
+    color: #FEF6C2; /* Hover color for links */
 }
 
-nav a {
-    text-decoration: none;
-    color: #4b3832; /* Adjusting color for contrast */
-    font-size: 1.5em;
-    padding: 5px 10px; /* Add some padding around the links */
-}
-
-nav a:hover {
-    color: #f0efeb;
-}
-
-main {
-    background-color: #fff; /* White background for main content */
-    margin: 20px auto;
-    padding: 2em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow around main content */
-    display: block; /* This helps with IE display issues */
-}
-
-main ul {
-    list-style: none;
-    padding-left: 0; 
-}
-
-main li {
-    margin-bottom: 5px; /* Spacing between list items */
-}
-
-footer {
-    font-size: small;
-    margin-top: 20px;
-    background-color: #4b3832;
-    color: #fff;
-    padding: 1em;
-    border-top: 2px solid #8C3826;
-}
-
+/* Font styling for headers */
 h1 {
-    font-size: 3em;
+    font-size: 2.5em; /* Large font size for main heading */
+    font-family: 'Bayon', sans-serif; /* Custom font for a unique appearance */
 }
 
-h2 {
-    color: #4b3832;
+h2, h3, dt {
+    color: #8C3826; /* Consistent theme color for headings */
 }
 
-h3, dt {
-    color: #8C3826;
-}
-
+/* h4 styling with background and border */
 h4 {
     background-color: #D2B48C;
     font-size: 1.2em;
     padding-left: .5em;
-    padding-bottom: .25em;
+    padding-bottom: 0;
+    text-transform: uppercase; /* Uppercase for subheadings */
+    border-bottom: 1px solid #221811; /* Border for visual separation */
+    clear: left; /* Prevents text wrapping around floated elements */
+}
+
+/* Navigation styling */
+nav {
+    float: left; /* Position nav on the left */
+    font-weight: bold; /* Bold font for navigation */
+    text-align: center; /* Center-align text */
+    font-size: 1.5em; /* Larger font size for navigation */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px; /* Fixed width for consistent navigation area */
+}
+
+/* Styling for navigation links */
+nav a:link {
+    color: #FEF6C2; /* Color for unvisited links */
+}
+
+nav a:visited {
+    color: #D2B48C; /* Color for visited links */
+}
+
+nav a:hover {
+    color: #CC9933; /* Color for links on hover */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Align list items to the left */
+}
+
+/* Main content area styling */
+main {
+    background-color: #FEF6C2; /* Light background for readability */
+    display: block; /* Block display for layout */
+    margin-left: 200px; /* Offset to accommodate nav */
+    overflow: auto; /* Allows for floated elements inside */
+    padding: 0 0 2em 0; /* Padding for space around content */
+}
+
+/* Padding for elements within main for consistent spacing */
+main h2, h3, h4, p, div, ul, dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
 
 .details {
-    padding-left: 20%;
-    padding-right: 20%;
+	padding-left: 20%;
+	padding-right: 20%;
+	overflow: auto;
+}
+
+.floatleft {
+	float: left;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+
+.onethird {
+	float: left;
+	width: 33%;
 }
 
 img {
-    padding-left: 10px;
-    padding-right: 10px;
+	border-style: none;
+	max-width: 100%;
+	height: auto;
 }
 
 #homehero {
-    height: 300px;
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+	height: 300px;
+	background-image: url(images/hero.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#heromugs {
+	height: 300px;
+	background-image: url(images/heromugs.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#heroguitar {
+	height: 300px;
+	background-image: url(images/heroguitar.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+footer {
+	background-color: #D2B48C;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 1em;
+	border-top: 2px solid #8C3826;
 }

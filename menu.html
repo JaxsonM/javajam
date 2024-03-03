@@ -13,31 +13,39 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>JavaJam Coffee Bar</h1>
+            <!-- Make header text a hyperlink to the home page -->
+            <h1><a href="index.html">JavaJam Coffee Bar</a></h1>
         </header>
         <nav>
-            <a href="index.html">Home</a> &nbsp;
-            <a href="menu.html">Menu</a> &nbsp;
-            <a href="music.html">Music</a> &nbsp;
-            <a href="jobs.html">Jobs</a>
+            <!-- Organized navigation links within an unordered list -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
         </nav>
         <main>
+            <!-- Remove the img tag and replace with a div for the hero image -->
+            <div id="heromugs"></div>
             <h2>Coffee at JavaJam</h2>
-            <img src="images/mugs.jpg" alt="Our Coffee Selection" width="300" height="200" align="right">
-            <p>Indulge in our locally roasted free-trade coffee and enjoy the aroma, the smooth taste, the caffeine! Join our Mug Club and get a 10% discount on each cup of coffee you purchase — ask the barista for details.</p>
-            <dl>
-                <dt><strong>Just Java</strong></dt>
-                <dd>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $3.50</dd>
-                
-                <dt><strong>Cafe au Lait</strong></dt>
-                <dd>House blended coffee with steamed milk.<br>Single $4.25 Double $5.25</dd>
-                
-                <dt><strong>Mocha Latte</strong></dt>
-                <dd>Espresso with steamed milk and chocolate syrup.<br>Single $4.75 Double $5.75</dd>
-                
-                <dt><strong>Iced Cappuccino</strong></dt>
-                <dd>Sweetened espresso, cold milk, served chilled.<br>Single $5.25 Double $6.75</dd>
-            </dl>
+            <!-- Format the menu information in three columns -->
+            <section class="onethird">
+                <h3>Just Java</h3>
+                <p>Regular house blend, decaffeinated coffee, or flavor of the day.<br>Endless Cup $3.50</p>
+            </section>
+            <section class="onethird">
+                <h3>Cafe au Lait</h3>
+                <p>House blended coffee with steamed milk.<br>Single $4.25 Double $5.25</p>
+            </section>
+            <section class="onethird">
+                <h3>Mocha Latte</h3>
+                <p>Espresso with steamed milk and chocolate syrup.<br>Single $4.75 Double $5.75</p>
+            </section>
+            <section class="onethird">
+                <h3>Iced Cappuccino</h3>
+                <p>Sweetened espresso, cold milk, served chilled.<br>Single $5.25 Double $6.75</p>
+            </section>
         </main>
         <footer>
             <small>&copy; 2024 JavaJam Coffee Bar - Crafted with care by Jaxson Madison</small><br>
